@@ -9,9 +9,4 @@
 // @match          https://ww3.animeonline.ninja/*
 // ==/UserScript==
 document.querySelectorAll(".CpCnC").forEach(element => element.remove());
-
-if (window.location.href.startsWith('https://ww3.animeonline.ninja/')) {
-}
-(() => {
-    document.querySelector("#single > div.sidebar.right.scrolling")?.remove();
-})();
+if (window.location.href.startsWith('https://ww3.animeonline.ninja/')) document.querySelector("#single > div.sidebar.right.scrolling")?.remove();
