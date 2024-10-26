@@ -7,6 +7,8 @@
 // @icon           https://cdn.discordapp.com/icons/1296915461954470058/bf720ede6b8c239672ce5d2e4873ae14.webp?size=100&quo
 // @match          https://www3.animeflv.net/*
 // ==/UserScript==
-let font = document.querySelector("head > link:nth-child(15)")
-font.remove()
-document.body.style.backgroundColor = "#000000";
+(function(){
+    let font = document.querySelector("head > link:nth-child(15)");
+    if (font) font.remove();
+    document.body.style.backgroundColor = "#000000";
+})();
